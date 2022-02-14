@@ -27,8 +27,8 @@ all: $(OBJ)
 
 clean:
 		@ echo "\033[3;31mRemoving: \033[0m"
-		@ echo "\033[3;31m$(OBJS)\033[0m" | tr ' ' '\n'
-		@ $(RM) $(OBJS)
+		@ echo "\033[3;31m$(OBJ)\033[0m" | tr ' ' '\n'
+		@ $(RM) $(OBJ)
 
 fclean:	clean
 		@ echo "\033[3;31m./$(NAME)\033[0m"
