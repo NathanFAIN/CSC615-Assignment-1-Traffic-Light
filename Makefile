@@ -1,9 +1,12 @@
-##
-## EPITECH PROJECT, 2018
-## Makefile
-## File description:
-## my make file
-##
+#************************************************************** * Class: CSC-615-01 Spring 2020
+# Name: Nathan Fain
+# Student ID: 922295956
+# Github ID: NathanFAIN
+# Project: Assignment 1 - Traffic Light
+# File: Makefile
+#
+# Description:
+# **************************************************************/
 
 CC	=	gcc
 
