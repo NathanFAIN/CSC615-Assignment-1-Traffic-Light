@@ -70,6 +70,7 @@ int main(void)
         for (int pin = 7; pin <= 11; pin++) {
             GPIO_SET = 1 << pin;
         }
+        sleep(1);
         for (int pin = 7; pin <= 11; pin++) {
             GPIO_CLR = 1 << pin;
         }
