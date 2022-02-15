@@ -69,12 +69,12 @@ int main(void)
     for (size_t index = 0; index < 10; index++) {
         for (int pin = 7; pin <= 11; pin++) {
             GPIO_SET = 1 << pin;
-            printf("GPIO_SET %i %i", pin, (int)(long)GPIO_SET);
+            printf("GPIO_SET %i %i\n", pin, (int)(long)GPIO_SET);
             //sleep(1);
         }
         for (int pin = 7; pin <= 11; pin++) {
             GPIO_CLR = 1 << pin;
-            printf("GPIO_SET %i %i", pin, (int)(long)GPIO_SET);
+            printf("GPIO_SET %i %i\n", pin, (int)(long)GPIO_SET);
             //sleep(1);
         }
         sleep(1);
