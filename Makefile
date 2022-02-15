@@ -31,7 +31,7 @@ all: assignment1wpi assignment1b
 
 $(NAME1): $(OBJ1)
 		@ echo "\033[1;36m[ FILES COMPILED ] \033[0m \033[1;34m$(words $(SRC1))\033[0m"
-		@ $(CC) $(OBJ1) $(CFLAGS) -o $(NAME1)
+		@ $(CC) $(OBJ1) $(CFLAGS) -lwiringPi -o $(NAME1)
 		@ echo "\033[1;34mBinary : \033[1;32m$(NAME)\033[1;34m created sucesfully.\033[0m"
 
 $(NAME2): $(OBJ2)
