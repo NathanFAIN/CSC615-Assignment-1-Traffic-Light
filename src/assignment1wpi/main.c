@@ -10,10 +10,9 @@
 
 
 #include <wiringPi.h>
-#include <stdio.h>
 #include "tools.h"
 
-int main(UNUSED int ac, UNUSED char **av, UNUSED char **env)
+int main(void)
 {
     wiringPiSetup();
     pinMode(27, OUTPUT);

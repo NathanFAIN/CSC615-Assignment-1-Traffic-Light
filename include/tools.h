@@ -8,4 +8,6 @@
 * Description:
 * **************************************************************/
 
+#include <stdio.h>
+
 #define UNUSED __attribute__((unused))
