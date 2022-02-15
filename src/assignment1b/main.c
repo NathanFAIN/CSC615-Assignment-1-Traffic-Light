@@ -49,7 +49,7 @@ void setup_io();
 int main(void)
 {
   // Set up gpi pointer for direct register access
-  setup_io();
+    setup_io();
 
   // Switch GPIO 7..11 to output mode
 
@@ -61,21 +61,24 @@ int main(void)
  \************************************************************************/
 
   // Set GPIO pins 7-11 to output
-  for (int pin = 7; pin <=11; pin++) {
-    INP_GPIO(pin); // must use INP_GPIO before we can use OUT_GPIO
-    OUT_GPIO(pin);
-  }
+    for (int pin = 7; pin <=11; pin++) {
+        INP_GPIO(pin); // must use INP_GPIO before we can use OUT_GPIO
+        OUT_GPIO(pin);
+    }
 
-  for (int rep = 0; rep < 10; rep++) {
-     for (int pin = 7; pin <= 11; pin++) {
-       GPIO_SET = 1 << pin;
-       sleep(1);
-     }
-     for (int pin = 7; pin <= 11; pin++) {
-       GPIO_CLR = 1 << pin;
-       sleep(1);
-     }
-  }
+    for (size_t index = 0; index < 10; index++) {
+        for (int pin = 7; pin <= 11; pin++) {
+            GPIO_SET = 1 << pin;
+            printf("GPIO_SET %i %i", pin, (int)(long)GPIO_SET);
+            //sleep(1);
+        }
+        for (int pin = 7; pin <= 11; pin++) {
+            GPIO_CLR = 1 << pin;
+            printf("GPIO_SET %i %i", pin, (int)(long)GPIO_SET);
+            //sleep(1);
+        }
+        sleep(1);
+    }
 
   return (0);
 
