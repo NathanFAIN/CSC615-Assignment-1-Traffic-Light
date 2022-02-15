@@ -16,13 +16,13 @@
 int main(UNUSED int ac, UNUSED char **av, UNUSED char **env)
 {
     wiringPiSetup();
-    pinMode(14, OUTPUT);
+    pinMode(15, OUTPUT);
     while (1) {
         printf("HIGH\n");
-        digitalWrite(14, HIGH);
+        digitalWrite(15, HIGH);
         delay(500);
         printf("LOW\n");
-        digitalWrite(14, LOW);
+        digitalWrite(15, LOW);
         delay(500);
     }
     return(0);
