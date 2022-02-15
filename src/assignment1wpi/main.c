@@ -9,18 +9,18 @@
 * **************************************************************/
 
 
-#include <stdio.h>
 #include <wiringPi.h>
+#include <stdio.h>
 #include "tools.h"
 
 int main(UNUSED int ac, UNUSED char **av, UNUSED char **env)
 {
     wiringPiSetup();
-    pinMode(0, OUTPUT);
+    pinMode(18, OUTPUT);
     while (1) {
-        digitalWrite(0, HIGH);
+        digitalWrite(18, HIGH);
         delay(500);
-        digitalWrite(0, LOW);
+        digitalWrite(18, LOW);
         delay(500);
     }
     return (0);
