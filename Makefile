@@ -24,6 +24,7 @@ CFLAGS	=	-I ./include/	\
 			-W				\
 			-Wextra			\
 			-Wall			\
+			-lwiringPi		\
 
 RM = rm -f
 
