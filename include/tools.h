@@ -10,4 +10,9 @@
 
 #include <stdio.h>
 
+#ifndef MY_TOOLS_H_
+#define MY_TOOLS_H_
+
 #define UNUSED __attribute__((unused))
+
+#endif

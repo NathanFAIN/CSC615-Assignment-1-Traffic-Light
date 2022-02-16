@@ -12,22 +12,26 @@
 #include <wiringPi.h>
 #include "tools.h"
 
+#define RED_PIN 27
+#define ORANGE_PIN 28
+#define GREEN_PIN 29
+
 int main(void)
 {
     wiringPiSetup();
-    pinMode(27, OUTPUT);
-    pinMode(28, OUTPUT);
-    pinMode(29, OUTPUT);
+    pinMode(RED_PIN, OUTPUT);
+    pinMode(ORANGE_PIN, OUTPUT);
+    pinMode(GREEN_PIN, OUTPUT);
     for (size_t index = 0; index < 2; index++) {
-        digitalWrite(29, HIGH);
+        digitalWrite(GREEN_PIN, HIGH);
         delay(6000);
-        digitalWrite(29, LOW);
-        digitalWrite(28, HIGH);
+        digitalWrite(GREEN_PIN, LOW);
+        digitalWrite(ORANGE_PIN, HIGH);
         delay(1500);
-        digitalWrite(28, LOW);
-        digitalWrite(27, HIGH);
+        digitalWrite(ORANGE_PIN, LOW);
+        digitalWrite(RED_PIN, HIGH);
         delay(5000);
-        digitalWrite(27, LOW);
+        digitalWrite(RED_PIN, LOW);
     }
     return(0);
 }
