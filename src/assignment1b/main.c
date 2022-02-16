@@ -22,6 +22,7 @@
 #include <unistd.h>
 #include <errno.h>
 #include <string.h>
+#include <stdbool.h>
 
 volatile unsigned int *gpio;
 
@@ -31,8 +32,8 @@ volatile unsigned int *gpio;
 #define GPIO_SET *(gpio+7)
 #define GPIO_CLR *(gpio+10)
 
-#define HIGH 1
-#define LOW 0
+#define HIGH true
+#define LOW false
 
 #define RED_PIN 16
 #define ORANGE_PIN 20
@@ -71,7 +72,7 @@ void init_pin(unsigned int pin)
     OUT_GPIO(pin);
 }
 
-void digital_write(unsigned int pin, char value)
+void digital_write(unsigned int pin, bool value)
 {
     if (value == 1) {
         GPIO_SET = 1 << pin;
