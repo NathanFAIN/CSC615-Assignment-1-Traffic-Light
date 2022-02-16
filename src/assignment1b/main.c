@@ -88,13 +88,13 @@ int main(void)
     init_pin(GREEN_PIN);
     for (size_t index = 0; index < 2; index++) {
         digital_write(GREEN_PIN, HIGH);
-        usleep(6000);
+        usleep(60000);
         digital_write(GREEN_PIN, LOW);
         digital_write(ORANGE_PIN, HIGH);
-        usleep(1500);
+        usleep(15000);
         digital_write(ORANGE_PIN, LOW);
         digital_write(RED_PIN, HIGH);
-        usleep(5000);
+        usleep(50000);
         digital_write(RED_PIN, LOW);
     }
     return (0);
