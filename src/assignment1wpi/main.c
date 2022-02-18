@@ -22,7 +22,7 @@ int main(void)
     pinMode(RED_PIN, OUTPUT);
     pinMode(ORANGE_PIN, OUTPUT);
     pinMode(GREEN_PIN, OUTPUT);
-    for (size_t index = 0; index < 2; index++) {
+    for (size_t index = 0; index < 3; index++) {
         digitalWrite(GREEN_PIN, HIGH);
         delay(6000);
         digitalWrite(GREEN_PIN, LOW);

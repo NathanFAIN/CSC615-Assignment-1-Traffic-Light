@@ -88,7 +88,7 @@ int main(void)
     init_pin(RED_PIN);
     init_pin(ORANGE_PIN);
     init_pin(GREEN_PIN);
-    for (size_t index = 0; index < 2; index++) {
+    for (size_t index = 0; index < 3; index++) {
         digital_write(GREEN_PIN, HIGH);
         usleep(6000000);
         digital_write(GREEN_PIN, LOW);
