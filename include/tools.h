@@ -5,7 +5,7 @@
 * Project: Assignment 1 - Traffic Light
 * File: tools.h
 *
-* Description:
+* Description: This file contains useful includes and tools for the assignment.
 * **************************************************************/
 
 #include <stdio.h>

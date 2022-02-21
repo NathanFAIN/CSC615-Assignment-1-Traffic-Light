@@ -5,7 +5,7 @@
 * Project: Assignment 1 - Traffic Light
 * File: main.c
 *
-* Description:
+* Description: Code for the assignment1b program.
 * **************************************************************/
 
 
