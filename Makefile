@@ -5,7 +5,7 @@
 # Project: Assignment 1 - Traffic Light
 # File: Makefile
 #
-# Description:
+# Description: A simple makefile for this project.
 # **************************************************************
 
 CC	=	gcc
